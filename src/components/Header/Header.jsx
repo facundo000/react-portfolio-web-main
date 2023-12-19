@@ -2,7 +2,7 @@ import React from 'react';
 import './header.css';
 import CTA from './CTA';
 import Avatar from '../../assets/avatar-logo.webp';
-import AvatarPng from '../../assets/avatar-logo.webp';
+import AvatarPng from '../../assets/avatar-logo.jpg';
 import HeaderSocial from './HeaderSocials';
 
 import i18n from '../Services/i8next';

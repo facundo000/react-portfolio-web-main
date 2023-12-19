@@ -2,7 +2,7 @@ import React from 'react';
 import './modal.css';
 import {BsPatchCheckFill} from 'react-icons/bs'
 
-
+// "ANIMATION PULSE" para bptpmes
 const Modal = ({ closeModal, project }) => {
    
   const {name,image,deployedLink, GitName, description, toolsUsed} = project;

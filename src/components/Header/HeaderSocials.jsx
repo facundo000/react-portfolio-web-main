@@ -10,7 +10,7 @@ import 'aos/dist/aos.css'
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
-          <a data-aos="fade-down" data-aos-duration="1500"  href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BGM44sSqrQE6IEfFeDr5XTA%3D%3D" target="_blank" rel="noreferrer">
+          <a data-aos="fade-down" data-aos-duration="1500"  href="https://www.linkedin.com/in/facundo-nicolas-guzman-olariaga-b4516021a" target="_blank" rel="noreferrer">
             <BsLinkedin/>
           </a>
           <a data-aos="fade-down" data-aos-duration="1200" href="https://github.com/facundo000" target="_blank" rel="noreferrer">

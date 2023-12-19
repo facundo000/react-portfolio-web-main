@@ -26,7 +26,7 @@ const Footer = () => {
 
     <div className="footer__copyright" data-aos="fade-up" data-aos-anchor=".footer__container"  data-aos-duration='1800'>
       <small>&copy; Facundo Guzmán Web Programmer. All rights reserved</small>
-      <small>v1</small>
+      <p>v1</p>
     </div>
    </footer>
   )
