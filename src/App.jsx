@@ -11,13 +11,10 @@ import Footer from './components/Footer/Footer';
 import AOS from 'aos';
 import Loader from './components/Loader/Loader';
 
-
 const App = () => {
 
   const [isLoading, setIsLoading] = useState(true);
   const [activeNav,setActiveNav] = useState('#');
-  // const [isEnglish, setIsEnglish] = useState(true);
-
    
   useEffect(() => {
 
@@ -65,7 +62,7 @@ const App = () => {
       <Nav activeNav={activeNav} setActiveNav={setActiveNav}/>
 
        {/* Language change button */}
-        
+      {/* <UseI8next/> */}
 
       {/* About Section */}
       <About/>

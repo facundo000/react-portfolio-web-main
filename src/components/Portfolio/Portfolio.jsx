@@ -2,10 +2,14 @@ import { useState } from 'react'
 import './portfolio.css'
 import Modal from '../Modal/Modal'
 
+import { useTranslation } from 'react-i18next';
+
+
 const Portfolio = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [t] = useTranslation("global");
 
   const projects = [ 
     {
@@ -14,7 +18,7 @@ const Portfolio = () => {
       GitName: "3d-prints",
       image: require('../../assets/projectsImg/impreciones-3d.webp'),
       fadeDuration:'1400',
-      description:"One of the first websites I made when I joined this world of web development. It is a landing page using Bootstrap and adapting it for both tablet and mobile.",
+      description: t("portfolio-item-description1") ,
       toolsUsed: ['HTML','CSS','Bootstrap']
     },
     {
@@ -75,8 +79,8 @@ const Portfolio = () => {
 
   return (
     <section id='portfolio'>
-        <h5 data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration='700'>My favorite part</h5>
-        <h2 data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration='900'>Projects</h2>
+        <h5 data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration='700'>{t("portfolio-favorite-part")} </h5>
+        <h2 data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration='900'>{t("portfolio-title")}</h2>
 
         <div className="container portfolio__container">
 

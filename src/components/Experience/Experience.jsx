@@ -3,12 +3,14 @@ import './experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
 import ProgressBar from './progressBar'
 
+import { useTranslation } from 'react-i18next';
 
 const Experience = () => {
+  const [t] = useTranslation("global");
   return (
     <section id='experience'>
-      <h5 data-aos="fade-up" data-aos-anchor="#experience"  data-aos-duration='900'>My skills?</h5>
-      <h2 data-aos="fade-up" data-aos-anchor="#experience"  data-aos-duration='700'>My Experience</h2>
+      <h5 data-aos="fade-up" data-aos-anchor="#experience"  data-aos-duration='900'>{t("sub-title-skills")} </h5>
+      <h2 data-aos="fade-up" data-aos-anchor="#experience"  data-aos-duration='700'>{t("title-skills")}</h2>
 
 
       <div className="container experience__container">

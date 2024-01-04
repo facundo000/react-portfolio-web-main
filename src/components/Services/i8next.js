@@ -1,25 +1,17 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import enTranslation from './languages/en.json';
-import esTranslation from './languages/es.json';
+//esto es como componet/body
+import React from 'react'
+import { useTranslation } from 'react-i18next';
 
+export default function UseI8next() {
+  const [t, i18n] = useTranslation("global");
 
-i18n
-  .use(initReactI18next)
-  .init({
-    resources: {
-      en: {
-            translation: enTranslation
-      },
-      es: {
-        translation: esTranslation
-      }
-    },
-    lng: 'en',
-    fallbackLng: 'en',
-    interpolation: {
-      escapeValue: false,
-    }
-  });
-
-  export default i18n;
+  return (
+    <div>
+      {/* <h5>{t("header.greeting")}</h5>
+      <h5>{t("header.title")}</h5>
+      <br/><br/> */}
+      <button onClick={() => i18n.changeLanguage("es")}>  ES  </button>
+      <button onClick={() => i18n.changeLanguage("en")}>  EN  </button>
+    </div>
+  )
+}
