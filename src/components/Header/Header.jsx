@@ -19,6 +19,7 @@ const Header = () => {
          <h1 data-aos="fade-up" data-aos-anchor=".header__container" data-aos-duration="1000" >Facundo Nicolás Guzmán Olariaga</h1>
          <h5 data-aos="fade-up" data-aos-anchor=".header__container" data-aos-duration="900" className="text-light">{t("header.title")}</h5>
          <CTA/>
+        
          <UseI8next/>
 
          <HeaderSocial />
@@ -29,9 +30,6 @@ const Header = () => {
            <img className='logo-image' data-aos="slide-up" data-aos-anchor=".logo"  data-aos-duration="1400" src={Avatar || AvatarPng} alt="me" />
          </div>
 
-         {/* <button onClick={() => changeLanguage('en')}>English </button>
-         <button onClick={() => changeLanguage('es')}> - Español</button> */}
-        
          <a href="#contact"  className="scroll__down">{t("scroll-down-text")} {'>>'} </a>
        </article>
 

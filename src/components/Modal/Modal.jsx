@@ -2,11 +2,13 @@ import React from 'react';
 import './modal.css';
 import {BsPatchCheckFill} from 'react-icons/bs'
 
-// "ANIMATION PULSE" para bptpmes
+import { useTranslation } from 'react-i18next';
+
+
 const Modal = ({ closeModal, project }) => {
    
   const {name,image,deployedLink, GitName, description, toolsUsed} = project;
-
+  const [t] = useTranslation("global");
   return (
     <>
         <article className="container modal-overlay" onClick={closeModal}>
@@ -27,13 +29,13 @@ const Modal = ({ closeModal, project }) => {
 
           <p className="modal-description">
             {description}{" "}         
-            Checkout the {" "}
-            <a href={`https://github.com/facundo000/${GitName}`}>source code </a>
-            and the  <a  
+            {t("portfolio-view-link-code")} {" "}
+            <a href={`https://github.com/facundo000/${GitName}`}>{t("portfolio-link-code")} </a>
+            {t("portfolio-view-demo-link")}  <a  
                   href={deployedLink}
                   target='_blank'
                   rel="noreferrer"
-              >Live Demo</a>
+              >{t("portfolio-live-demo-link")}</a>
  
           </p>
          

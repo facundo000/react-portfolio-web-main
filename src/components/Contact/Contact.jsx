@@ -9,6 +9,8 @@ import { FaTelegramPlane } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { useTranslation } from 'react-i18next';
+
 const Contact = () => {
 
   const form = useRef();
@@ -25,12 +27,12 @@ const Contact = () => {
 
     e.target.reset();
   };
-
+  const [t] = useTranslation("global");
 
   return (
     <section id='contact'>
-      <h5 data-aos="fade-up" data-aos-anchor="#contact"  data-aos-duration='700'>Methods for</h5>
-      <h2 data-aos="fade-up" data-aos-anchor="#contact"  data-aos-duration='900'>Have My Contact</h2>
+      <h5 data-aos="fade-up" data-aos-anchor="#contact"  data-aos-duration='700'>{t("contact-title")}</h5>
+      <h2 data-aos="fade-up" data-aos-anchor="#contact"  data-aos-duration='900'>{t("contact-sub-title")}</h2>
       <ToastContainer/>
 
       <div className="container contact__container">
@@ -41,7 +43,7 @@ const Contact = () => {
             <MdOutlineEmail className='contact__option-icon'/></a>
             <h4>Email</h4>
             <h5 style={{fontSize:'15px' }}>facundo.guzman@mi.unc.edu.ar</h5>
-            <a href="mailto:facundo.guzman@mi.unc.edu.ar" target='_blank'  rel="noreferrer">Send me an email</a>
+            <a href="mailto:facundo.guzman@mi.unc.edu.ar" target='_blank'  rel="noreferrer">{t("contact-email-button")}</a>
           </article>
 
           {/* Linkedin  */}
@@ -50,7 +52,7 @@ const Contact = () => {
             <BsLinkedin className='contact__option-icon'/></a>
             <h4>Linkedin </h4>
             <h5>FACUNDO NICOLAS GUZMAN OLARIAGA</h5>
-            <a href="https://www.linkedin.com/in/facundo-nicolas-guzman-olariaga-b4516021a/" target='_blank'  rel="noreferrer">Look my Profile</a>
+            <a href="https://www.linkedin.com/in/facundo-nicolas-guzman-olariaga-b4516021a/" target='_blank'  rel="noreferrer">{t("contact-linkedin-button")}</a>
           </article>
 
           {/* Instagram  */}
@@ -60,7 +62,7 @@ const Contact = () => {
             </a>
             <h4>Instagram</h4>
             <h5>@desarrollador_web_freelance</h5>
-            <a href="https://www.instagram.com/desarrollador_web_freelance/" target='_blank'  rel="noreferrer">Send a DM</a>
+            <a href="https://www.instagram.com/desarrollador_web_freelance/" target='_blank'  rel="noreferrer">{t("contact-instagram-button")}</a>
           </article>
 
           
@@ -69,10 +71,10 @@ const Contact = () => {
         {/* END OF CONTACT OPTIONS  */}
         <div className='form'>
         <form ref={form} onSubmit={sendEmail} >
-           <input type="text" name='name' placeholder='Full Name' data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='800' required/>
-           <input type="email" name='email' placeholder='Email' data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='950' required/>
-           <textarea name="message" style={{fontFamily: "Poppins" }} placeholder='Your message here...' rows="7" data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='1200' required></textarea>
-           <button type='submit' className='btn btn-primary form__button' data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='1400'>Send Message <FaTelegramPlane className='send__message-icon'/></button>
+           <input type="text" name='name' placeholder={t("contact-form-full-name")} data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='800' required/>
+           <input type="email" name='email' placeholder={t("contact-form-email")} data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='950' required/>
+           <textarea name="message" style={{fontFamily: "Poppins" }} placeholder={t("contact-form-message-placeholder")} rows="7" data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='1200' required></textarea>
+           <button type='submit' className='btn btn-primary form__button' data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='1400'>{t("contact-form-button")} <FaTelegramPlane className='send__message-icon'/></button>
         </form>
         </div>
       </div>

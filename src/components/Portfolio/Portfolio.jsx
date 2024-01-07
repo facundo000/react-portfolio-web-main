@@ -27,7 +27,7 @@ const Portfolio = () => {
       GitName: "website-resume",
       image: require('../../assets/projectsImg/Captura-de-pantalla-_13_.webp'),
       fadeDuration:'1200',
-      description:"As a practice I made this resume to hand out to potential recruiters. Besides, the good thing about this is that it is interactive, it has links that lead to my contact. Although it is basic, nowadays it could improve it more.",
+      description:t("portfolio-item-description2"),
       toolsUsed: ['HTML','CSS', 'JavaScript', 'w3']
     },
     { 
@@ -36,7 +36,7 @@ const Portfolio = () => {
       deployedLink: "https://sitiodcafe.netlify.app/",
       image: require('../../assets/projectsImg/Captura-de-pantalla-_7_.webp'),
       fadeDuration:'1000',
-      description: 'Blog created from a coffee shop where there is information about coffee, there is a "courses" section and another to send a message through a form.',
+      description: t("portfolio-item-description3"),
       toolsUsed: ['HTML','CSS']
     
     },
@@ -45,7 +45,7 @@ const Portfolio = () => {
       GitName: "T-shirt-Shop",
       deployedLink: "https://tienda01.netlify.app/",
       image: require('../../assets/projectsImg/Captura-de-pantalla-2023-08-09-184937.webp'),
-      description: "Frontend clothing store created while studying on Udemy, it has three sections for your research. Simulate a sketch for an online store.",
+      description: t("portfolio-item-description4"),
       fadeDuration: "1100",
       toolsUsed: ['HTML','CSS']
     },
@@ -55,7 +55,7 @@ const Portfolio = () => {
       GitName: "calculator",
       image: require('../../assets/projectsImg/Captura-de-pantalla-_12_.webp'),
       fadeDuration:'1300',
-      description:"The objective of this project was as an introduction to the development of the Angular framework.",
+      description:t("portfolio-item-description5"),
       toolsUsed: ['HTML', 'Sass', 'TypeScript', 'Angular', 'Bootstrap']
     },
     {
@@ -64,7 +64,7 @@ const Portfolio = () => {
       GitName:"Api_Rest-Angular-RickAndMorty/tree/main/api-Rick-Morty",
       image: require('../../assets/projectsImg/Rick&Morty.webp'),
       fadeDuration:'1400',
-      description:"Application using the Rick and Morty Rest API. Allows you to filter by name in the search engine if not by scrolling down. It allows easy access, since I implemented Lazy Loading.",
+      description:t("portfolio-item-description6"),
       toolsUsed: ['HTML', 'SCSS', 'TypeScript', 'Angular', 'Lazy Loading', 'Api Rest', 'Bootstrap']
     }
   ]
@@ -92,7 +92,7 @@ const Portfolio = () => {
                   <img src={image} alt={`${name} app Screenshot`} />
               </div>
               <h3
-              title='Click for the view details'
+              title={t("click-for-details")}
               className='portfolio__item-name'
                onClick={() => handleClick({name,image,deployedLink, GitName, toolsUsed, description})}
               >{name}</h3>
@@ -107,7 +107,7 @@ const Portfolio = () => {
                   href={deployedLink}
                   target='_blank'
                   rel="noreferrer"
-                >Live Demo</a>
+                >{t("portfolio-live-demo-link")}</a>
               </div>
           </article>
            ))

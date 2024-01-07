@@ -51,6 +51,12 @@
     font-size: 0.9rem;
 }
 
+/* COSOOOO */
+.lang-btn {
+    background-color: var(--color-bg);
+    border: solid black 0.5px;
+ }
+
 /* Media queries for tablet */
 @media  screen and (max-width: 1024px) {
     .services__container{

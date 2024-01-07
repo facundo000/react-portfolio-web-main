@@ -1,20 +1,24 @@
 import React from 'react'
 import './footer.css'
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
-import {SiLeetcode} from 'react-icons/si'
+import {SiLeetcode} from 'react-icons/si';
+
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const [t] = useTranslation("global");
+  
   return (
    <footer className="footer__container">
 
     <ul className="permalinks" data-aos="fade-up" data-aos-anchor=".footer__container"  data-aos-duration='1400'>
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#">{t("footer-home")}</a></li>
+      <li><a href="#about">{t("footer-about")}</a></li>
+      <li><a href="#experience">{t("footer-experience")}</a></li>
+      <li><a href="#services">{t("footer-services")}</a></li>
+      <li><a href="#portfolio">{t("footer-portfolio")}</a></li>
       {/* <li><a href="#reviews">Reviews</a></li> */}
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact">{t("footer-contact")}</a></li>
     </ul>
 
 
@@ -25,8 +29,7 @@ const Footer = () => {
     </div>
 
     <div className="footer__copyright" data-aos="fade-up" data-aos-anchor=".footer__container"  data-aos-duration='1800'>
-      <small>&copy; Facundo Guzmán Web Programmer. All rights reserved</small>
-      <p>v1</p>
+      <small>&copy; Facundo Nicolas Guzmán Olariaga {t("footer-copyright")}</small>
     </div>
    </footer>
   )
