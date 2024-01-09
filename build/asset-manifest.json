@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d1c1912.css",
-    "main.js": "/static/js/main.737face4.js",
+    "main.css": "/static/css/main.b91003b9.css",
+    "main.js": "/static/js/main.c101be9e.js",
     "static/media/cv_dev.pdf": "/static/media/cv_dev.30d72555677a0d308d1d.pdf",
     "static/media/Captura-de-pantalla-_7_.webp": "/static/media/Captura-de-pantalla-_7_.3bfe23664b4c2ae73b93.webp",
     "static/media/Rick&Morty.webp": "/static/media/Rick&Morty.f3841bb786410f3c280f.webp",
@@ -9,15 +9,14 @@
     "static/media/Captura-de-pantalla-_13_.webp": "/static/media/Captura-de-pantalla-_13_.fa08565343e839846ab4.webp",
     "static/media/Captura-de-pantalla-2023-08-09-184937.webp": "/static/media/Captura-de-pantalla-2023-08-09-184937.2021691458e9436c4de1.webp",
     "static/media/avatar-logo.jpg": "/static/media/avatar-logo.99a7b95a1b9d7b912269.jpg",
-    "static/media/avatar1.jpg": "/static/media/avatar1.2ce3bcdf203974014f7d.jpg",
     "static/media/avatar-logo.webp": "/static/media/avatar-logo.a15c609875ec28e48a6b.webp",
     "static/media/Captura-de-pantalla-_12_.webp": "/static/media/Captura-de-pantalla-_12_.11067a67b09be54b132a.webp",
     "index.html": "/index.html",
-    "main.2d1c1912.css.map": "/static/css/main.2d1c1912.css.map",
-    "main.737face4.js.map": "/static/js/main.737face4.js.map"
+    "main.b91003b9.css.map": "/static/css/main.b91003b9.css.map",
+    "main.c101be9e.js.map": "/static/js/main.c101be9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d1c1912.css",
-    "static/js/main.737face4.js"
+    "static/css/main.b91003b9.css",
+    "static/js/main.c101be9e.js"
   ]
 }
