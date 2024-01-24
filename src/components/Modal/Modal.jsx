@@ -4,6 +4,7 @@ import {BsPatchCheckFill} from 'react-icons/bs'
 
 import { useTranslation } from 'react-i18next';
 
+import Markdown from 'react-markdown'
 
 const Modal = ({ closeModal, project }) => {
    
@@ -28,9 +29,10 @@ const Modal = ({ closeModal, project }) => {
           </div>
 
           <p className="modal-description">
-            {description}{" "}         
+            <Markdown>{description}</Markdown>{" "}
+            
             {t("portfolio-view-link-code")} {" "}
-            <a href={`https://github.com/facundo000/${GitName}`}>{t("portfolio-link-code")} </a>
+            <a href={`https://github.com/${GitName}`}>{t("portfolio-link-code")} </a>
             {t("portfolio-view-demo-link")}  <a  
                   href={deployedLink}
                   target='_blank'

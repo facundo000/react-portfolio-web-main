@@ -5,7 +5,7 @@ import Avatar from '../../assets/avatar-logo.webp';
 import AvatarPng from '../../assets/avatar-logo.jpg';
 import HeaderSocial from './HeaderSocials';
 
-import UseI8next from '../Services/I8next';
+import UseI8next from '../Services/I8next.js';
 import { useTranslation } from 'react-i18next';
 
 import 'aos/dist/aos.css'
@@ -27,7 +27,7 @@ const Header = () => {
 
          <div className="logo">
           {/* Image of me */}
-           <img className='logo-image' data-aos="slide-up" data-aos-anchor=".logo"  data-aos-duration="1400" src={Avatar || AvatarPng} alt="me" />
+           <img className='logo-image' data-aos="slide-up" data-aos-anchor=".logo"  data-aos-duration="1400" src={Avatar || AvatarPng} alt="Avatar of me"/>
          </div>
 
          <a href="#contact"  className="scroll__down">{t("scroll-down-text")} {'>>'} </a>

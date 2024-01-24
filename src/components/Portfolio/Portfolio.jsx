@@ -4,7 +4,6 @@ import Modal from '../Modal/Modal'
 
 import { useTranslation } from 'react-i18next';
 
-
 const Portfolio = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -12,70 +11,51 @@ const Portfolio = () => {
   const [t] = useTranslation("global");
 
   const projects = [ 
-    {
-      name: "3d prints",
-      deployedLink: "https://3d-print-bootstrap.netlify.app/",
-      GitName: "3d-prints",
-      image: require('../../assets/projectsImg/impreciones-3d.webp'),
-      fadeDuration:'1400',
-      description: t("portfolio-item-description1") ,
-      toolsUsed: ['HTML','CSS','Bootstrap']
-    },
-    {
-      name : "Curriculum Web",
-      deployedLink: "https://curriculum-vitae-fg.netlify.app/",
-      GitName: "website-resume",
-      image: require('../../assets/projectsImg/Captura-de-pantalla-_13_.webp'),
-      fadeDuration:'1200',
-      description:t("portfolio-item-description2"),
-      toolsUsed: ['HTML','CSS', 'JavaScript', 'w3']
-    },
     { 
-      name : "Coffee Blog",
-      GitName: "Blog_coffee",
-      deployedLink: "https://sitiodcafe.netlify.app/",
-      image: require('../../assets/projectsImg/Captura-de-pantalla-_7_.webp'),
+      name : "TechZone",
+      GitName: "No-Country/C15-03-M-NodeReact",
+      deployedLink: "https://techzone-nocountry.vercel.app/",
+      image: require('../../assets/projectsImg/techzone.webp'),
       fadeDuration:'1000',
-      description: t("portfolio-item-description3"),
-      toolsUsed: ['HTML','CSS']
+      description: t("portfolio-item-description1"),
+      toolsUsed: ['Node js','Express js', 'JWT', 'PostgreSQL', 'RESTful']
     
-    },
-    {
-      name: "T-shirt Shop",
-      GitName: "T-shirt-Shop",
-      deployedLink: "https://tienda01.netlify.app/",
-      image: require('../../assets/projectsImg/Captura-de-pantalla-2023-08-09-184937.webp'),
-      description: t("portfolio-item-description4"),
-      fadeDuration: "1100",
-      toolsUsed: ['HTML','CSS']
-    },
-    {
-      name:"Calculator",
-      deployedLink: "https://facundo000.github.io/calculator/",
-      GitName: "calculator",
-      image: require('../../assets/projectsImg/Captura-de-pantalla-_12_.webp'),
-      fadeDuration:'1300',
-      description:t("portfolio-item-description5"),
-      toolsUsed: ['HTML', 'Sass', 'TypeScript', 'Angular', 'Bootstrap']
     },
     {
       name: "Rick & Morty Api Rest",
       deployedLink: "https://rickmorty-api-rest.netlify.app/",
-      GitName:"Api_Rest-Angular-RickAndMorty/tree/main/api-Rick-Morty",
-      image: require('../../assets/projectsImg/Rick&Morty.webp'),
+      GitName:"facundo000/Api_Rest-Angular-RickAndMorty/tree/main/api-Rick-Morty",
+      image: require('../../assets/projectsImg/rickandmorty.webp'),
       fadeDuration:'1400',
-      description:t("portfolio-item-description6"),
+      description:t("portfolio-item-description2"),
       toolsUsed: ['HTML', 'SCSS', 'TypeScript', 'Angular', 'Lazy Loading', 'Api Rest', 'Bootstrap']
+    },
+    { 
+      name : "Incubadora del N.O.C",
+      GitName: "fernandojbcba/santex_grupo30",
+      deployedLink: "https://academy-e13ca.web.app/home/landing/",
+      image: require('../../assets/projectsImg/xacademy.webp'),
+      fadeDuration:'1000',
+      description: t("portfolio-item-description4"),
+      toolsUsed: ['Angular', 'Angular Material', 'JWT']
+    },
+    { 
+      name : "Coffee Blog",
+      GitName: "facundo000/Blog_coffee",
+      deployedLink: "https://sitiodcafe.netlify.app/",
+      image: require('../../assets/projectsImg/coffee-blog.webp'),
+      fadeDuration:'1000',
+      description: t("portfolio-item-description3"),
+      toolsUsed: ['HTML','CSS']
+    
     }
+    
   ]
 
   const handleClick = project => {
     setSelectedProject(project);
     setIsModalOpen(!isModalOpen);
   };
-
-
-
 
   return (
     <section id='portfolio'>
@@ -96,10 +76,9 @@ const Portfolio = () => {
               className='portfolio__item-name'
                onClick={() => handleClick({name,image,deployedLink, GitName, toolsUsed, description})}
               >{name}</h3>
-
               <div className="portfolio__item-cta">
                 <a className='btn' 
-                  href={`https://github.com/facundo000/${GitName}`}
+                  href={`https://github.com/${GitName}`}
                   target='_blank'
                   rel="noreferrer"
                 >GitHub</a>

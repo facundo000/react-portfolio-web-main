@@ -73,50 +73,50 @@ const Experience = () => {
            <h3>Backend</h3>
             <div className="experience__content">
               {/* Node JS  */}
-              <article className="experience__details">
+              {/* <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon"/>
                 <div>
-                  <div> <ProgressBar skill="Node JS" level={20} /><small>20%</small></div>
+                  <div> <ProgressBar skill="Node JS" level={25} /><small>20%</small></div>
                 </div>
-              </article>
+              </article> */}
 
               {/* Express  */}
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon"/>
                 <div>
-                  <div> <ProgressBar skill="Express" level={10} /><small>10%</small></div>
+                  <div> <ProgressBar skill="Express" level={30} /><small>30%</small></div>
                 </div>
               </article>
               
-              {/* PHP  */}
-              <article className="experience__details">
+              {/* Nest  */}
+              {/* <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon"/>
                 <div>
-                  <div> <ProgressBar skill="PHP" level={15} /><small>15%</small></div>
+                  <div> <ProgressBar skill="Nest" level={15} /><small>15%</small></div>
                 </div>
-              </article>
+              </article> */}
               
               {/* MySQL  */}
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon"/>
                 <div>
-                  <div> <ProgressBar skill="MySQL" level={15} /><small>15%</small></div>
+                  <div> <ProgressBar skill="MySQL" level={20} /><small>20%</small></div>
                 </div>
               </article>
 
-              {/* REST  */}
+              {/* Strapi  */}
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon"/>
                 <div>
-                  <div> <ProgressBar skill="REST" level={10} /><small>10%</small></div>
+                  <div> <ProgressBar skill="Strapi" level={8} /><small>8%</small></div>
                 </div>
               </article>
 
-               {/* Insomnia  */}
+               {/* Postman  */}
                <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon"/>
                 <div>
-                  <div> <ProgressBar skill="Insomnia" level={15} /><small>15%</small></div>
+                  <div> <ProgressBar skill="Postman" level={25} /><small>25%</small></div>
                 </div>
               </article>
 
