@@ -27,7 +27,7 @@ const Header = () => {
 
          <div className="logo">
           {/* Image of me */}
-           <img className='logo-image' data-aos="slide-up" data-aos-anchor=".logo"  data-aos-duration="1400" src={Avatar || AvatarPng} alt="Avatar of me"/>
+           <img className='logo-image' data-aos="slide-up" data-aos-duration="1400" src={Avatar || AvatarPng} alt="Avatar of me" loading="lazy"/>
          </div>
 
          <a href="#contact"  className="scroll__down">{t("scroll-down-text")} {'>>'} </a>

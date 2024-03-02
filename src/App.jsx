@@ -57,37 +57,23 @@ const App = () => {
    isLoading ? <Loader/> : (
     <>
     <Helmet>
-       {/* <title>Facundo Guzman Portfolio</title>
-       <meta name="description" content="Look at this wonderful Portfolio which shows the journey of an Argentine fascinated in the world of technology." />
-       <meta property="og:url" content="https://portfolio-facundo-guzman.netlify.app" />
-       <meta property="og:type" content="website" />
-       <meta property="og:title" content="Facundo Guzman Portfolio" />
-       <meta property="og:description" content="Look at this wonderful Portfolio which shows the journey of an Argentine fascinated in the world of technology." />
-       <meta property="og:image" content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/portfolio-facundo-guzman.netlify.app/Facundo%20Guzman%20Portfolio/Look%20at%20this%20wonderful%20Portfolio%20which%20shows%20the%20journey%20of%20an%20Argentine%20fascinated%20in%20the%20world%20of%20technology./https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2Ffb6a08a3-8a7f-4d32-b03a-d3dec20303d8.jpg%3Ftoken%3Dcj8fFeyJyZxbzffFw5FIVbAT8knSaRPnnPk1W11RsAA%26height%3D537%26width%3D1200%26expires%3D33240807436/og.png" />
-       <meta name="twitter:card" content="summary_large_image" />
-       <meta property="twitter:domain" content="portfolio-facundo-guzman.netlify.app" />
-       <meta property="twitter:url" content="https://portfolio-facundo-guzman.netlify.app" />
-       <meta name="twitter:title" content="Facundo Guzman Portfolio" />
-       <meta name="twitter:description" content="Look at this wonderful Portfolio which shows the journey of an Argentine fascinated in the world of technology." />
-       <meta name="twitter:image" content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/portfolio-facundo-guzman.netlify.app/Facundo%20Guzman%20Portfolio/Look%20at%20this%20wonderful%20Portfolio%20which%20shows%20the%20journey%20of%20an%20Argentine%20fascinated%20in%20the%20world%20of%20technology./https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2Ffb6a08a3-8a7f-4d32-b03a-d3dec20303d8.jpg%3Ftoken%3Dcj8fFeyJyZxbzffFw5FIVbAT8knSaRPnnPk1W11RsAA%26height%3D537%26width%3D1200%26expires%3D33240807436/og.png" /> */}
-       {/* <!-- HTML Meta Tags --> */}
-<title>Facundo Guzman Portfolio</title>
-<meta name="description" content="Look at this wonderful Portfolio which shows the journey of an Argentine fascinated in the world of technology."/>
+      <title>Facundo Guzman Portfolio</title>
+      <meta name="description" content="Look at this wonderful Portfolio which shows the journey of an Argentine fascinated in the world of technology."/>
 
-{/* <!-- Facebook Meta Tags --/> */}
-<meta property="og:url" content="https://portfolio-facundo-guzman.netlify.app/"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Facundo Guzman Portfolio"/>
-<meta property="og:description" content="Look at this wonderful Portfolio which shows the journey of an Argentine fascinated in the world of technology."/>
-<meta property="og:image" content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/portfolio-facundo-guzman.netlify.app/Facundo%20Guzman%20Portfolio/Look%20at%20this%20wonderful%20Portfolio%20which%20shows%20the%20journey%20of%20an%20Argentine%20fascinated%20in%20the%20world%20of%20technology./https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2Ffb6a08a3-8a7f-4d32-b03a-d3dec20303d8.jpg%3Ftoken%3Dcj8fFeyJyZxbzffFw5FIVbAT8knSaRPnnPk1W11RsAA%26height%3D537%26width%3D1200%26expires%3D33240807436/og.png"/>
+      {/* <!-- Facebook Meta Tags --/> */}
+      <meta property="og:url" content="https://portfolio-facundo-guzman.netlify.app/"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:title" content="Facundo Guzman Portfolio"/>
+      <meta property="og:description" content="Look at this wonderful Portfolio which shows the journey of an Argentine fascinated in the world of technology."/>
+      <meta property="og:image" content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/portfolio-facundo-guzman.netlify.app/Facundo%20Guzman%20Portfolio/Look%20at%20this%20wonderful%20Portfolio%20which%20shows%20the%20journey%20of%20an%20Argentine%20fascinated%20in%20the%20world%20of%20technology./https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2Ffb6a08a3-8a7f-4d32-b03a-d3dec20303d8.jpg%3Ftoken%3Dcj8fFeyJyZxbzffFw5FIVbAT8knSaRPnnPk1W11RsAA%26height%3D537%26width%3D1200%26expires%3D33240807436/og.png"/>
 
-{/* <!-- Twitter Meta Tags --/> */}
-<meta name="twitter:card" content="summary_large_image"/>
-<meta property="twitter:domain" content="portfolio-facundo-guzman.netlify.app"/>
-<meta property="twitter:url" content="https://portfolio-facundo-guzman.netlify.app/"/>
-<meta name="twitter:title" content="Facundo Guzman Portfolio"/>
-<meta name="twitter:description" content="Look at this wonderful Portfolio which shows the journey of an Argentine fascinated in the world of technology."/>
-<meta name="twitter:image" content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/portfolio-facundo-guzman.netlify.app/Facundo%20Guzman%20Portfolio/Look%20at%20this%20wonderful%20Portfolio%20which%20shows%20the%20journey%20of%20an%20Argentine%20fascinated%20in%20the%20world%20of%20technology./https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2Ffb6a08a3-8a7f-4d32-b03a-d3dec20303d8.jpg%3Ftoken%3Dcj8fFeyJyZxbzffFw5FIVbAT8knSaRPnnPk1W11RsAA%26height%3D537%26width%3D1200%26expires%3D33240807436/og.png"/>
+      {/* <!-- Twitter Meta Tags --/> */}
+      <meta name="twitter:card" content="summary_large_image"/>
+      <meta property="twitter:domain" content="portfolio-facundo-guzman.netlify.app"/>
+      <meta property="twitter:url" content="https://portfolio-facundo-guzman.netlify.app/"/>
+      <meta name="twitter:title" content="Facundo Guzman Portfolio"/>
+      <meta name="twitter:description" content="Look at this wonderful Portfolio which shows the journey of an Argentine fascinated in the world of technology."/>
+      <meta name="twitter:image" content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/portfolio-facundo-guzman.netlify.app/Facundo%20Guzman%20Portfolio/Look%20at%20this%20wonderful%20Portfolio%20which%20shows%20the%20journey%20of%20an%20Argentine%20fascinated%20in%20the%20world%20of%20technology./https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2Ffb6a08a3-8a7f-4d32-b03a-d3dec20303d8.jpg%3Ftoken%3Dcj8fFeyJyZxbzffFw5FIVbAT8knSaRPnnPk1W11RsAA%26height%3D537%26width%3D1200%26expires%3D33240807436/og.png"/>
 
 {/* <!-- Meta Tags Generated via https://opengraph.dev --> */}
      </Helmet>

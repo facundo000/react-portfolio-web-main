@@ -69,7 +69,7 @@ const Portfolio = () => {
           <article className='portfolio__item' key={name} data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration={fadeDuration}
           >
               <div className="portfolio__item-image">
-                  <img src={image} alt={`${name} app Screenshot`} />
+                  <img src={image} alt={`${name} app Screenshot`} loading="lazy" />
               </div>
               <h3
               title={t("click-for-details")}

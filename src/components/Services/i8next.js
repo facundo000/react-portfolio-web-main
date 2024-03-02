@@ -9,11 +9,7 @@ export default function UseI8next() {
   return (
     <select value={currentLang} onChange={e => {i18n.changeLanguage(e.target.value); setCurrentLang(e.target.value);}} className='lang-btn'>
  <option  value="en">EN</option>
- <option value="es">ES</option>
+ <option value="es"> ES </option>
 </select>
-    // <div>
-    //   <button className="lang-btn" onClick={() => i18n.changeLanguage("es")}>  ES  </button>
-    //   <button className="lang-btn" onClick={() => i18n.changeLanguage("en")}>  EN  </button>
-    // </div>
   )
 }
