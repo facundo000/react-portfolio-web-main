@@ -1,7 +1,8 @@
-import React from 'react'
-import './experience.css'
-import {BsPatchCheckFill} from 'react-icons/bs'
-import ProgressBar from './progressBar'
+import React from 'react';
+import './experience.css';
+import {BsPatchCheckFill} from 'react-icons/bs';
+import ProgressBar from './progressBar';
+import TimeLine from './timeLine';
 
 import { useTranslation } from 'react-i18next';
 
@@ -15,7 +16,7 @@ const Experience = () => {
 
       <div className="container experience__container">
         <div className="experience__frontend" data-aos="fade-right" data-aos-anchor=".experience__container"  data-aos-duration="900">
-        <h3>Frontend</h3>
+        <h3 className="rol" >Frontend</h3>
             <div className="experience__content">
               {/* HTML  */}
               <article className="experience__details">
@@ -41,11 +42,11 @@ const Experience = () => {
                 </div>
               </article>
               
-              {/* Sass  */}
+              {/* TypeScript  */}
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon"/>
                 <div>
-                  <div> <ProgressBar skill="Sass" level={15} /><small>15%</small></div>
+                  <div> <ProgressBar skill="TypeScript" level={15} /><small>15%</small></div>
                 </div>
               </article>
 
@@ -70,15 +71,15 @@ const Experience = () => {
         {/* BACKEND SKILLS */}
       
         <div className="experence__backend" data-aos="fade-left" data-aos-anchor=".experience__container"  data-aos-duration="1200">
-           <h3>Backend</h3>
+           <h3 className="rol" >Backend</h3>
             <div className="experience__content">
-              {/* Node JS  */}
-              {/* <article className="experience__details">
+              {/* NestJS  */}
+              <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon"/>
                 <div>
-                  <div> <ProgressBar skill="Node JS" level={25} /><small>20%</small></div>
+                  <div> <ProgressBar skill="NestJS" level={17} /><small>17%</small></div>
                 </div>
-              </article> */}
+              </article>
 
               {/* Express  */}
               <article className="experience__details">
@@ -88,13 +89,13 @@ const Experience = () => {
                 </div>
               </article>
               
-              {/* Nest  */}
-              {/* <article className="experience__details">
+              {/* PostgreSQL  */}
+              <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon"/>
                 <div>
-                  <div> <ProgressBar skill="Nest" level={15} /><small>15%</small></div>
+                  <div> <ProgressBar skill="PostgreSQL" level={17} /><small>17%</small></div>
                 </div>
-              </article> */}
+              </article>
               
               {/* MySQL  */}
               <article className="experience__details">
@@ -112,16 +113,12 @@ const Experience = () => {
                 </div>
               </article>
 
-               {/* Postman  */}
-               <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon"/>
-                <div>
-                  <div> <ProgressBar skill="Postman" level={25} /><small>25%</small></div>
-                </div>
-              </article>
-
             </div>
         </div>
+      </div>
+
+      <div className='time-line'>
+        <TimeLine/>
       </div>
     </section>
     // estaria bueno agregar aca una seccion de herramientas que utilizo como Figma, LightHouse, FontsAwesome, Linux, GitHub, Git , Trello

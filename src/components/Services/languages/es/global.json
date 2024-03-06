@@ -19,10 +19,14 @@
     "about-services-list-3":"Buscando una empresa",
     "about-technologies": "Tecnologías",
     "about-technologies-description": "15+ herramientas de desarrollo web",
-    "about-description": "¡Hola! Mi nombre completo es Facundo Nicolás Guzmán Olariaga, para los amigos soy Nico, Facu para familia y para el trabajo soy un fiel aprendiz y sobre todo en la programación web, con una motivación fuerte por crear experiencias digitales excepcionales.\n\n Me encanta todo lo relacionado con la tecnología, pero no tanto como mi equipo de fútbol <span class='Boca'>❤Boca</span><span class='jr'>jr ❤</span>.\n\n Estoy listo y dispuesto a afrontar nuevos retos y aprender de cada experiencia. Tanto mi enfoque orientado a resultados como mi capacidad para trabajar en equipo me permiten afrontar proyectos con creatividad y eficiencia",
+    "about-description": "Mi nombre completo es Facundo Nicolás Guzmán Olariaga, para los amigos soy Nico, Facu para familia y para el trabajo soy un fiel aprendiz y sobre todo en la programación web.<br> Me encanta todo lo relacionado con la tecnología, pero no tanto como mi equipo de fútbol <span class='Boca'>❤Boca </span><span class='jr'>jr ❤</span>.<br> La facultad me ayudó para tener una base fuerte de lógica de programación. <br> Gracias a eso tengo diversos proyectos realizados tantos individualmente como en equipo. <br> Mi objetivo es especializarme en el <span class='back'>backend </span>, que de hecho, estoy en la UTN-FRC para obtener el título de <span class='technicality'> Tecnicatura Universitaria en Programación. </span>",
     "btn-lets-chat": "Hablemos",
     "sub-title-skills": "Mis habilidades",
     "title-skills": "Experiencia",
+    "tlTime1": "Noviembre - Diciembre",
+    "tlBody": "Proyecto final de Santex Academy Incubadora NOC. Incubadora NOC es una app web de inscripciones a cursos, donde el profesor o administrador puede disponer del curso y el alumno puede inscribirse al mismo después de abonar.",
+    "tlTime2": "Agosto - Octubre",
+    "tlBody2": "Creé junto a un equipo de desarrollaodores un ecomerce de productos electrónicos. Trabajamos bajo la modalidad ágil Scrum, con un TL, PM y un Tester QA.",
     "sub-title-services": "Lo que puedo hacer por ti",
     "services-title": "Servicios",
     "web-development-title": "Desarrollo web",
@@ -73,5 +77,5 @@
     "footer-services": "Servicios",
     "footer-portfolio": "Portafolio",
     "footer-contact": "Contacto",
-    "footer-copyright": "Programador web."
+    "footer-copyright": "Creado con amor por"
     }

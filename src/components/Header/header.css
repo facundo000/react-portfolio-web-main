@@ -1,3 +1,11 @@
+.coso {
+    display: flex;
+}
+.size_icon {
+    width: 3.4vh;
+    height: 3.4vh;
+}
+
 header {
     height: 100vh;
     padding-top: 7rem;
@@ -6,9 +14,11 @@ header {
 
 .header__container {
     text-align: center;
-    height: 100%;
+    height: 90%;
     position: relative;
 }
+
+
 
 .logo-image {
     background-color: var(--color-bg-variant);
@@ -23,6 +33,10 @@ header {
     justify-content: center;
 }
 
+/* ========================== INTERNALIZATION ========================== */
+.i8next {
+    margin: 1.5vh 0 0 0;
+}
 
 /* ========================== HEADER SOCIALS ========================== */
 .header__socials {
@@ -50,7 +64,7 @@ header {
     height: 40rem;
     position: absolute;
     left: calc(50% - 15rem);
-    margin-top: 4rem;
+    margin-top: 10rem;
    
 }
 
@@ -64,15 +78,21 @@ header {
     font-size: 0.9rem;
 }
 
-/* ========================= MEDIA QUERIES (MEDIUM DEVICES) ======================== */
+/* ========================= MEDIA QUERIES (LONG DEVICES) ======================== */
+
 @media screen and (min-width: 1440px) {
     header{
         height: 65rem;
 
+        .logo{
+            height: 100%;
+            width: 44%;
+        }
+
         .logo-image{
             margin-top: 10rem;
-            width: 30rem;
-            height: 30rem;
+            height: 43%;
+            width: 79%;
         }
 
         .header__socials{
@@ -96,6 +116,7 @@ header {
         }
     }
 }
+
 /* ================================= Tablets ================================= */
 @media screen and (max-width: 1024px) { 
     header {
@@ -127,6 +148,7 @@ header {
 @media screen and (max-height: 800px) {
     header {
         /* height: 108vh; */
+        height: 208vh;
     }
 
     header img {        
@@ -138,7 +160,7 @@ header {
 }
 
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 
     header  {
         height: 115vh;
@@ -149,13 +171,13 @@ header {
     .scroll__down {
         display: none;
     }
-}
+} */
 
 
 
 
-@media screen and (max-width: 300px) {
+/* @media screen and (max-width: 300px) {
     header {
         height: 125vh;
     }
-}
+} */

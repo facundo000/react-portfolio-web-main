@@ -18,24 +18,26 @@ const Header = () => {
          <h5 data-aos="fade-up" data-aos-anchor=".header__container" data-aos-duration="1200" >{t("header.greeting")}</h5>
          <h1 data-aos="fade-up" data-aos-anchor=".header__container" data-aos-duration="1000" >Facundo Nicolás Guzmán Olariaga</h1>
          <h5 data-aos="fade-up" data-aos-anchor=".header__container" data-aos-duration="900" className="text-light">{t("header.title")}</h5>
-         <CTA/>
-        
-         <UseI8next/>
+         
+         
+          <CTA/>
+          <div className="i8next">
+            <UseI8next />
+          </div>
+          <HeaderSocial />
 
-         <HeaderSocial />
+          <div className="logo">
+            {/* Image of me */}
+            <img className='logo-image' data-aos="slide-up" data-aos-duration="1400" src={Avatar} alt="Avatar of me" loading="lazy"/>
+            <source src={AvatarPng}/>
+          </div>
 
-
-         <div className="logo">
-          {/* Image of me */}
-           <img className='logo-image' data-aos="slide-up" data-aos-duration="1400" src={Avatar || AvatarPng} alt="Avatar of me" loading="lazy"/>
-         </div>
-
-         <a href="#contact"  className="scroll__down">{t("scroll-down-text")} {'>>'} </a>
+          <a href="#contact"  className="scroll__down">{t("scroll-down-text")} {'>>'} </a>
+      
        </article>
-
-        
-
     </header>
+    
+
   )
 }
 

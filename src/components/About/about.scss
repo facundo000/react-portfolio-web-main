@@ -152,6 +152,18 @@ small{
   color: #0011ae;
 }
 
+.back {
+  color: var(--color-primary);
+  font-weight: 400;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.technicality{
+  color: var(--color-primary);
+  font-weight: 400;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .about__content p{
     margin: 2rem 0 2.6rem;
     color: var(--color-light);

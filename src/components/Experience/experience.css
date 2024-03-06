@@ -24,6 +24,10 @@
     color: var(--color-primary);
 }
 
+.rol {
+    color: var(--color-white) !important;
+}
+
 .experience__content{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -40,7 +44,38 @@
     color: var(--color-primary);
 }
 
+/* TIME LINE */
+.content-tl {
+    /* background-color: blue; */
+    display: block;
+}
+.time-line {
+    color: aliceblue;
+    padding: 10vh 21vh 1vh 35vh;
+    width: 100%;
+}
 
+.discover {
+    display: flex;
+    align-items: center;
+}
+
+.tlBody {
+    color: var(--color-white);
+    width: 80vh;
+}
+
+.tlTime {
+    color: var(--color-primary);
+}
+
+.tlTitle {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+.tlBody, .tlTime, .tlTitle {
+    font-family: "Poppins", sans-serif;
+}
 @media  screen and (max-width: 1024px) {
     .experience__container{
         grid-template-columns: 1fr;
@@ -55,7 +90,19 @@
     .experience__content{
         padding: 1rem;
     }
+
 }
+
+@media (37.5em <= width <= 55em) {
+    .time-line {
+        padding: 33px 102px;
+    }
+
+    .tlBody {
+        /* color: var(--color-white); */
+        width: 70vh;
+    }
+  }
  /* Media Queries (phones) */
 
  @media  screen and (max-width: 600px) {
@@ -69,4 +116,19 @@
         padding: 2rem 1rem;
     }
 
+    .time-line {
+        display: flex;
+        justify-content: center;
+        color: var(--color-white);
+        padding: 33px 102px;
+        width: 100%;
+        /* background-color: red; */
+    }
+
+
+    .tlBody {
+        color: var(--color-white);
+        /* width: 20vh; */
+        width: 100%;
+    }
  }

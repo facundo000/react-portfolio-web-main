@@ -29,7 +29,7 @@ const Footer = () => {
     </div>
 
     <div className="footer__copyright" data-aos="fade-up" data-aos-anchor=".footer__container"  data-aos-duration='1800'>
-      <small>&copy; Facundo Nicolas Guzmán Olariaga {t("footer-copyright")}</small>
+      <small>{t("footer-copyright")} Facundo Nicolas Guzmán Olariaga</small>
     </div>
    </footer>
   )

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './about.scss'
 import { FaThumbsUp, FaTelegramPlane } from 'react-icons/fa';
-import { FiUsers } from 'react-icons/fi';
-import { BsClipboardCheck } from 'react-icons/bs';
+// import { FiUsers } from 'react-icons/fi';
+// import { BsClipboardCheck } from 'react-icons/bs';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -15,7 +15,7 @@ import {
   faHtml5,
   faJsSquare,
   faAngular,
-  faSass
+  faCss3Alt
 } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -47,7 +47,7 @@ const About = () => {
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
             </div>
             <div className="face3">
-              <FontAwesomeIcon icon={faSass} color="#ff0479" />
+              <FontAwesomeIcon icon={faCss3Alt} color="#ff0479" />
             </div>
             <div className="face4">
               <FontAwesomeIcon icon={faAngular} color="#ff0000" />
@@ -62,20 +62,20 @@ const About = () => {
         </div>
 
         <div className="about__content">
-          <div className="about__cards">
+          {/* <div className="about__cards">
             
             {/* Trusted Developer */}
-            <article className="about__card" data-aos="fade-left" data-aos-anchor=".about__cards"  data-aos-duration="500">
+            {/* <article className="about__card" data-aos="fade-left" data-aos-anchor=".about__cards"  data-aos-duration="500">
                 <FaThumbsUp className='about__icon'/>
                 <h5>{t("about-trusted-developer")}</h5>
                 <ul>
                   <li>{t("about-trusted-developer-res")}</li>
                   <li>{t("about-trusted-developer-good")}</li>
                 </ul>
-            </article>
+            </article> */}
 
             {/* Services */}
-            <article className="about__card" data-aos="fade-left" data-aos-anchor=".about__cards"  data-aos-duration="700">
+            {/* <article className="about__card" data-aos="fade-left" data-aos-anchor=".about__cards"  data-aos-duration="700">
                 <FiUsers className='about__icon'/>
                 <h5>{t("about-services")}</h5>
                 <ul>
@@ -84,17 +84,17 @@ const About = () => {
                   <li>{t("about-services-list-3")}</li>
                 </ul>
                 
-            </article>
+            </article> */}
 
             {/* Technologies  */}
-            <article className="about__card" data-aos="fade-left" data-aos-anchor=".about__cards"  data-aos-duration="900">
+            {/* <article className="about__card" data-aos="fade-left" data-aos-anchor=".about__cards"  data-aos-duration="900">
                 <BsClipboardCheck className='about__icon'/>
                 <h5>{t("about-technologies")}</h5>
                 <ul>
                   <li>{t("about-technologies-description")}</li>
                   </ul>
-            </article>
-          </div>
+            </article> */}
+          {/* </div>  */}
            
           <p  data-aos="fade-up" data-aos-anchor=".about__content"  data-aos-duration="1000" dangerouslySetInnerHTML={{ __html: t("about-description") }}/>
 

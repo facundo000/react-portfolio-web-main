@@ -19,10 +19,14 @@
     "about-services-list-3":"Looking for a company",
     "about-technologies": "Technologies",
     "about-technologies-description": "15+ Web Development Stack",
-    "about-description": "Hello! My full name is Facundo Nicolás Guzmán Olariaga, for friends I am Nico, Facu for family and for work I am a faithful learner and especially in web programming, with a strong motivation to create exceptional digital experiences.<br> I love everything related to technology, but not as much as my soccer team <span class='Boca'>❤Boca</span><span class='jr'>jr ❤</span>.<br> I am ready and willing to face new challenges and learn from each experience. Both my results-oriented approach and my ability to work as a team allow me to tackle projects with creativity and efficiency.",
+    "about-description": "My full name is Facundo Nicolás Guzmán Olariaga, for friends I am Nico, Facu for family and for work I am a faithful learner and especially in web programming.<br> I love everything related to technology, but not as much as my soccer team <span class='Boca'>❤Boca </span><span class='jr'>jr ❤</span>.<br> The faculty helped me to have a strong foundation of programming logic. <br> Thanks to that I have various projects carried out both individually and as a team. <br> My goal is to specialize in the <span class='back'>backend </span>, in fact, I am at the UTN-FRC to obtain the title of <span class='technicality'> University Technician in Programming . </span>",
     "btn-lets-chat": "Let's chat",
     "sub-title-skills": "My skills",
     "title-skills": "Experience",
+    "tlTime1": "November - December",
+    "tlBody": "Final project of Santex Academy NOC Incubator. NOC Incubator is a web app for course registration, where the teacher or administrator can have the course and the student can register for it after paying.",
+    "tlTime2": "August - October",
+    "tlBody2": "Together with a team of developers, I developed an e-commerce for electronic products. We work under the agile Scrum modality, with a TL, PM and a QA Tester.",
     "sub-title-services": "The things i can do for you",
     "services-title": "Services",
     "web-development-title": "Web development",
@@ -72,5 +76,5 @@
     "footer-services": "Services",
     "footer-portfolio": "Portfolio",
     "footer-contact": "Contact",
-    "footer-copyright": "Web Programmer."
+    "footer-copyright": "Created with love"
     }
