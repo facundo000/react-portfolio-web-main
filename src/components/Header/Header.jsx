@@ -24,6 +24,7 @@ const Header = () => {
           <div className="i8next">
             <UseI8next />
           </div>
+
           <HeaderSocial />
 
           <div className="logo">
@@ -31,10 +32,12 @@ const Header = () => {
             <img className='logo-image' data-aos="slide-up" data-aos-duration="1400" src={Avatar} alt="Avatar of me" loading="lazy"/>
             <source src={AvatarPng}/>
           </div>
-
+          
           <a href="#contact"  className="scroll__down">{t("scroll-down-text")} {'>>'} </a>
-      
+        
+          
        </article>
+       
     </header>
     
 

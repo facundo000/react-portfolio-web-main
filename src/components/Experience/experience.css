@@ -58,6 +58,8 @@
 .discover {
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
+    background-color: var(--color-primary-variant);
 }
 
 .tlBody {

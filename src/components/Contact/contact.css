@@ -1,3 +1,6 @@
+.text-light {
+    color: var(--color-primary-variant);
+}
 .container.contact__container{
     width: 58%;
     display: grid;

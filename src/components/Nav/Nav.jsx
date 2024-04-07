@@ -31,11 +31,11 @@ const Nav = ({activeNav, setActiveNav}) => {
         onClick={handleClick}
         title='experience'
         ><BiBook/></a>
-      <a href="#services" 
+      {/* <a href="#services" 
         className={activeNav === '#services' ? 'active' : ''}
         onClick={handleClick}
         title='services'
-        ><RiServiceLine/></a>
+        ><RiServiceLine/></a> */}
       <a href="#portfolio"  
         className={activeNav === '#portfolio' ? 'active' : ''}
         onClick={handleClick}

@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <section id='contact'>
       <h5 data-aos="fade-up" data-aos-anchor="#contact"  data-aos-duration='700'>{t("contact-title")}</h5>
-      <h2 data-aos="fade-up" data-aos-anchor="#contact"  data-aos-duration='900'>{t("contact-sub-title")}</h2>
+      <h2 data-aos="fade-up" data-aos-anchor="#contact"  data-aos-duration='900' className='text-light'>{t("contact-sub-title")}</h2>
       <ToastContainer/>
 
       <div className="container contact__container">

@@ -12,6 +12,16 @@ const Portfolio = () => {
 
   const projects = [ 
     { 
+      name : "NEKODE",
+      GitName: "/facundo000/NEKODE_FG",
+      deployedLink: "https://nekode.vercel.app/",
+      image: require('../../assets/projectsImg/nekode.webp'),
+      fadeDuration:'1000',
+      description: t("portfolio-item-description5"),
+      toolsUsed: ['Nest js','TypeOrm', 'TypeScript' ,'JWT', 'PostgreSQL', 'RESTful']
+    },
+
+    { 
       name : "TechZone",
       GitName: "No-Country/C15-03-M-NodeReact",
       deployedLink: "https://techzone-nocountry.vercel.app/",
@@ -21,15 +31,6 @@ const Portfolio = () => {
       toolsUsed: ['Node js','Express js', 'JWT', 'PostgreSQL', 'RESTful']
     
     },
-    {
-      name: "Rick & Morty Api Rest",
-      deployedLink: "https://rickmorty-api-rest.netlify.app/",
-      GitName:"facundo000/Api_Rest-Angular-RickAndMorty/tree/main/api-Rick-Morty",
-      image: require('../../assets/projectsImg/rickandmorty.webp'),
-      fadeDuration:'1400',
-      description:t("portfolio-item-description2"),
-      toolsUsed: ['HTML', 'SCSS', 'TypeScript', 'Angular', 'Lazy Loading', 'Api Rest', 'Bootstrap']
-    },
     { 
       name : "Incubadora del N.O.C",
       GitName: "fernandojbcba/santex_grupo30",
@@ -38,6 +39,15 @@ const Portfolio = () => {
       fadeDuration:'1000',
       description: t("portfolio-item-description4"),
       toolsUsed: ['Angular', 'Angular Material', 'JWT']
+    },
+    {
+      name: "Rick & Morty Api Rest",
+      deployedLink: "https://rickmorty-api-rest.netlify.app/",
+      GitName:"facundo000/Api_Rest-Angular-RickAndMorty/tree/main/api-Rick-Morty",
+      image: require('../../assets/projectsImg/rickandmorty.webp'),
+      fadeDuration:'1400',
+      description:t("portfolio-item-description2"),
+      toolsUsed: ['HTML', 'SCSS', 'TypeScript', 'Angular', 'Lazy Loading', 'Api Rest', 'Bootstrap']
     },
     { 
       name : "Coffee Blog",
@@ -71,13 +81,22 @@ const Portfolio = () => {
               <div className="portfolio__item-image">
                   <img src={image} alt={`${name} app Screenshot`} loading="lazy" />
               </div>
-              <h3
+              {/* <h3
               title={t("click-for-details")}
               className='portfolio__item-name'
                onClick={() => handleClick({name,image,deployedLink, GitName, toolsUsed, description})}
-              >{name}</h3>
+              >
+                {name}
+              </h3> */}
+              <button 
+              title={t("click-for-details")}
+              className='portfolio__item-name'
+              onClick={() => handleClick({name,image,deployedLink, GitName, toolsUsed, description})}>
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                {name}
+              </button>
               <div className="portfolio__item-cta">
-                <a className='btn' 
+                <a className='btn gh' 
                   href={`https://github.com/${GitName}`}
                   target='_blank'
                   rel="noreferrer"
@@ -86,7 +105,9 @@ const Portfolio = () => {
                   href={deployedLink}
                   target='_blank'
                   rel="noreferrer"
-                >{t("portfolio-live-demo-link")}</a>
+                >{t("portfolio-live-demo-link")}
+                </a>
+
               </div>
           </article>
            ))

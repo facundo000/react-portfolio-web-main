@@ -105,11 +105,11 @@ const Experience = () => {
                 </div>
               </article>
 
-              {/* Strapi  */}
+              {/* Docker  */}
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon"/>
                 <div>
-                  <div> <ProgressBar skill="Strapi" level={8} /><small>8%</small></div>
+                  <div> <ProgressBar skill="Docker Compose" level={11} /><small>11%</small></div>
                 </div>
               </article>
 
