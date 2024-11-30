@@ -13,7 +13,21 @@ import Loader from './components/Loader/Loader';
 
 import	{ Helmet } from 'react-helmet';
 
-const App = () => {
+const App = () => {  
+
+  //google  analytics
+  const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=G-YGX7V43BHW`;
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-YGX7V43BHW');
+
 
   const [isLoading, setIsLoading] = useState(true);
   const [activeNav,setActiveNav] = useState('#');

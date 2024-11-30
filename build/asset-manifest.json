@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.959c1962.css",
-    "main.js": "/static/js/main.08b24ca4.js",
-    "static/media/cv_dev.pdf": "/static/media/cv_dev.c6bd7c2e02cd30e32149.pdf",
+    "main.css": "/static/css/main.5a5cfad9.css",
+    "main.js": "/static/js/main.dcbe3f55.js",
+    "static/media/cv_dev.pdf": "/static/media/cv_dev.7f0225253dd378023f06.pdf",
     "static/media/avatar-logo.jpg": "/static/media/avatar-logo.99a7b95a1b9d7b912269.jpg",
+    "static/media/nekode.webp": "/static/media/nekode.fa81cb4788c2b9fd3acc.webp",
     "static/media/coffee-blog.webp": "/static/media/coffee-blog.e3107e515a0877adb878.webp",
     "static/media/rickandmorty.webp": "/static/media/rickandmorty.219764b2fa8f84f95040.webp",
     "static/media/xacademy.webp": "/static/media/xacademy.1167510040ffb0c16fef.webp",
     "static/media/techzone.webp": "/static/media/techzone.941f96fc20b7c20ada11.webp",
     "static/media/avatar-logo.webp": "/static/media/avatar-logo.a15c609875ec28e48a6b.webp",
     "index.html": "/index.html",
-    "main.959c1962.css.map": "/static/css/main.959c1962.css.map",
-    "main.08b24ca4.js.map": "/static/js/main.08b24ca4.js.map"
+    "main.5a5cfad9.css.map": "/static/css/main.5a5cfad9.css.map",
+    "main.dcbe3f55.js.map": "/static/js/main.dcbe3f55.js.map"
   },
   "entrypoints": [
-    "static/css/main.959c1962.css",
-    "static/js/main.08b24ca4.js"
+    "static/css/main.5a5cfad9.css",
+    "static/js/main.dcbe3f55.js"
   ]
 }
