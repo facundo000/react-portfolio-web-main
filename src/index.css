@@ -21,7 +21,7 @@
    --color-bg-variant: #401b6d;
     --color-primary: #000000; 
     --color-primary-variant: #ca78f9de;
-    --color-white: #fff;
+    --color-white: #e8ccff;
     --color-light: rgba(255,255,255,0.6);
 
     --container-width-lg:75%;
@@ -41,7 +41,7 @@
  }
  body{
     font-family: "Poppins", sans-serif;
-    /* background: var(--color-bg); */
+    background: var(--color-bg);
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(111,82,144,1) 48%, rgba(202,120,249,1) 100%);
     color: var(--color-primary);
@@ -147,3 +147,4 @@
     }
 
 }
+

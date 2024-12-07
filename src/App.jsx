@@ -71,7 +71,6 @@ const App = () => {
    isLoading ? <Loader/> : (
     <>
 
-      {/* Header section */}
       <Header/>
       {/* Nav section  */}
       <Nav activeNav={activeNav} setActiveNav={setActiveNav}/>

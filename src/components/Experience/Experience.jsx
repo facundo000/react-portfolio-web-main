@@ -1,8 +1,23 @@
 import React from 'react';
 import './experience.css';
-import {BsPatchCheckFill} from 'react-icons/bs';
-import ProgressBar from './progressBar';
 import TimeLine from './timeLine';
+
+import { 
+  SiAngular,
+  SiNestjs,
+  SiMongodb,
+  SiMicrosoftsqlserver,
+  SiDotnet   
+ } from "react-icons/si";
+ import { 
+  FaHtml5,
+  FaCss3Alt,
+  FaDocker
+ } from "react-icons/fa";
+ import { DiJavascript } from "react-icons/di";
+ import { BiLogoPostgresql } from "react-icons/bi";
+
+
 
 import { useTranslation } from 'react-i18next';
 
@@ -13,108 +28,212 @@ const Experience = () => {
       <h5 data-aos="fade-up" data-aos-anchor="#experience"  data-aos-duration='900'>{t("sub-title-skills")} </h5>
       <h2 data-aos="fade-up" data-aos-anchor="#experience"  data-aos-duration='700'>{t("title-skills")}</h2>
 
-
       <div className="container experience__container">
-        <div className="experience__frontend" data-aos="fade-right" data-aos-anchor=".experience__container"  data-aos-duration="900">
-        <h3 className="rol" >Frontend</h3>
-            <div className="experience__content">
-              {/* HTML  */}
-              <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon"/>
-                <div>
-                  <div> <ProgressBar skill="HTML" level={70} /><small>70%</small></div>
-                </div>
-              </article>
-
-              {/* CSS  */}
-              <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon"/>
-                <div>
-                  <div> <ProgressBar skill="CSS" level={70} /><small>70%</small></div>
-                </div>
-              </article>
-
-              {/* JavaScript  */}
-              <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon"/>
-                <div>
-                  <div> <ProgressBar skill="JavaScript" level={25} /><small>25%</small></div>
-                </div>
-              </article>
-              
-              {/* TypeScript  */}
-              <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon"/>
-                <div>
-                  <div> <ProgressBar skill="TypeScript" level={15} /><small>15%</small></div>
-                </div>
-              </article>
-
-              {/* Angular  */}
-              <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon"/>
-                <div>
-                  <div> <ProgressBar skill="Angular" level={40} /><small>40%</small></div>
-                </div>
-              </article>
-
-              {/* Bootstrap  */}
-              <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon"/>
-                <div>
-                  <div> <ProgressBar skill="Bootstrap" level={60} /><small>60%</small></div>
-                </div>
-              </article>
-            </div>
-        </div>
-
-        {/* BACKEND SKILLS */}
+     
+        {/* Technical Skills */}
       
         <div className="experence__backend" data-aos="fade-left" data-aos-anchor=".experience__container"  data-aos-duration="1200">
-           <h3 className="rol" >Backend</h3>
+           <h3 className="rol" > Technical Skills</h3>
+            <section className='skills'>
             <div className="experience__content">
-              {/* NestJS  */}
-              <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon"/>
-                <div>
-                  <div> <ProgressBar skill="NestJS" level={17} /><small>17%</small></div>
+                            
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    Angular
+                   </span>
+                  <SiAngular className='icon' style={{ marginLeft: 15 }}/>
                 </div>
               </article>
 
-              {/* Express  */}
-              <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon"/>
-                <div>
-                  <div> <ProgressBar skill="Express" level={30} /><small>30%</small></div>
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    NestJs
+                   </span>
+                  <SiNestjs className='icon' style={{ marginLeft: 15 }}/>
                 </div>
               </article>
               
-              {/* PostgreSQL  */}
-              <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon"/>
+              <article className="experience__details">                
                 <div>
-                  <div> <ProgressBar skill="PostgreSQL" level={17} /><small>17%</small></div>
+                  <span className='title_skill'>
+                    HTML
+                   </span>
+                  <FaHtml5 className='icon' style={{ marginLeft: 5 }}/>
                 </div>
               </article>
               
-              {/* MySQL  */}
-              <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon"/>
-                <div>
-                  <div> <ProgressBar skill="MySQL" level={20} /><small>20%</small></div>
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    CSS
+                   </span>
+                  <FaCss3Alt className='icon' style={{ margin: 0}} />
+                </div>
+              </article>
+              
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    JavaScript
+                   </span>
+                  <DiJavascript className='icon' />
+                </div>
+              </article>
+              
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    PostgreSQL
+                   </span>
+                  <BiLogoPostgresql className='icon' />
                 </div>
               </article>
 
-              {/* Docker  */}
-              <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon"/>
-                <div>
-                  <div> <ProgressBar skill="Docker Compose" level={11} /><small>11%</small></div>
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    MongoDB
+                   </span>
+                  <SiMongodb className='icon' />
+                </div>
+              </article>
+              
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    SQL Server
+                   </span>
+                  <SiMicrosoftsqlserver className='icon' />
+                </div>
+              </article>
+               
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    Docker
+                   </span>
+                  <FaDocker className='icon' />
+                </div>
+              </article>
+              
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    .NET Core
+                   </span>
+                  <SiDotnet className='icon' />
                 </div>
               </article>
 
             </div>
+              </section>
+       
         </div>
+
+        {/* Soft   Skills */}
+        {/* <div className="experence__backend" data-aos="fade-left" data-aos-anchor=".experience__container"  data-aos-duration="1200">
+           <h3 className="rol" >Soft Skills</h3>
+            <section className='skills'>
+            <div className="experience__content">
+                            
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    Angular
+                   </span>
+                  <SiAngular className='icon' style={{ marginLeft: 15 }}/>
+                </div>
+              </article>
+
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    NestJs
+                   </span>
+                  <SiNestjs className='icon' style={{ marginLeft: 15 }}/>
+                </div>
+              </article>
+              
+              <article className="experience__details">                
+                <div>
+                  <span className='title_skill'>
+                    HTML
+                   </span>
+                  <FaHtml5 className='icon' style={{ marginLeft: 5 }}/>
+                </div>
+              </article>
+              
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    CSS
+                   </span>
+                  <FaCss3Alt className='icon' style={{ margin: 0}} />
+                </div>
+              </article>
+              
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    JavaScript
+                   </span>
+                  <DiJavascript className='icon' />
+                </div>
+              </article>
+              
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    PostgreSQL
+                   </span>
+                  <BiLogoPostgresql className='icon' />
+                </div>
+              </article>
+
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    MongoDB
+                   </span>
+                  <SiMongodb className='icon' />
+                </div>
+              </article>
+              
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    SQL Server
+                   </span>
+                  <SiMicrosoftsqlserver className='icon' />
+                </div>
+              </article>
+               
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    Docker
+                   </span>
+                  <FaDocker className='icon' />
+                </div>
+              </article>
+              
+              <article className="experience__details">                
+                <div className='skill_icon'>
+                  <span className='title_skill'>
+                    .NET Core
+                   </span>
+                  <SiDotnet className='icon' />
+                </div>
+              </article>
+
+            </div>
+              </section>
+       
+        </div> */}
+
+
       </div>
 
       <div className='time-line'>

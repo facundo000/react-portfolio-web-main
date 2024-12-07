@@ -1,11 +1,11 @@
+// import { FiUsers } from 'react-icons/fi';
+// import { BsClipboardCheck } from 'react-icons/bs';
 import React, { useState } from 'react'
 import './about.scss'
 import { FaThumbsUp, FaTelegramPlane } from 'react-icons/fa';
-// import { FiUsers } from 'react-icons/fi';
-// import { BsClipboardCheck } from 'react-icons/bs';
+import  Terminal from './Terminal/terminal.jsx'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { useTranslation } from 'react-i18next';
 
 // Brand Svg icons
@@ -17,7 +17,6 @@ import {
   faAngular,
   faCss3Alt
 } from '@fortawesome/free-brands-svg-icons';
-
 
 
 const About = () => {
@@ -61,42 +60,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="about__content">
-          {/* <div className="about__cards">
-            
-            {/* Trusted Developer */}
-            {/* <article className="about__card" data-aos="fade-left" data-aos-anchor=".about__cards"  data-aos-duration="500">
-                <FaThumbsUp className='about__icon'/>
-                <h5>{t("about-trusted-developer")}</h5>
-                <ul>
-                  <li>{t("about-trusted-developer-res")}</li>
-                  <li>{t("about-trusted-developer-good")}</li>
-                </ul>
-            </article> */}
+        <div className="about__content"  data-aos="fade-up" data-aos-anchor=".about__content" data-aos-duration="1000">
+          
+          
+          <Terminal/>
 
-            {/* Services */}
-            {/* <article className="about__card" data-aos="fade-left" data-aos-anchor=".about__cards"  data-aos-duration="700">
-                <FiUsers className='about__icon'/>
-                <h5>{t("about-services")}</h5>
-                <ul>
-                  <li>{t("about-services-list-1")}</li>
-                  <li>{t("about-services-list-2")} </li>
-                  <li>{t("about-services-list-3")}</li>
-                </ul>
-                
-            </article> */}
-
-            {/* Technologies  */}
-            {/* <article className="about__card" data-aos="fade-left" data-aos-anchor=".about__cards"  data-aos-duration="900">
-                <BsClipboardCheck className='about__icon'/>
-                <h5>{t("about-technologies")}</h5>
-                <ul>
-                  <li>{t("about-technologies-description")}</li>
-                  </ul>
-            </article> */}
-          {/* </div>  */}
-           
-          <p  data-aos="fade-up" data-aos-anchor=".about__content"  data-aos-duration="1000" dangerouslySetInnerHTML={{ __html: t("about-description") }}/>
+          {/* <p  data-aos="fade-up" data-aos-anchor=".about__content"  data-aos-duration="1000" dangerouslySetInnerHTML={{ __html: t("about-description") }}/> */}
 
            <a href='#contact' className='btn btn-primary' data-aos="fade-up" data-aos-anchor=".about__content"  data-aos-duration="1200">{t("btn-lets-chat") }<FaTelegramPlane/></a>
         </div>
