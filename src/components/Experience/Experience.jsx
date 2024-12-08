@@ -36,11 +36,21 @@ const Experience = () => {
 
       </div>
 
+      <div className="container experience__container soft">
+         <h5 className='rol' data-aos="fade-up" data-aos-anchor="#experience"  data-aos-duration='900'>{t("soft-skills")}</h5>
+
+          <section className='s_skills'>
+            <span class="bg-purple-100 text-purple-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">{t("skill-1")}</span>
+            <span class="bg-purple-100 text-purple-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">{t("skill-2")}</span>
+            <span class="bg-purple-100 text-purple-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">{t("skill-3")}</span>
+            <span class="bg-purple-100 text-purple-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300"> {t("skill-4")}</span>
+            <span class="bg-purple-100 text-purple-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">{t("skill-5")}</span>
+          </section>
+      </div>
       <div className='time-line'>
         <TimeLine/>
       </div>
     </section>
-    // estaria bueno agregar aca una seccion de herramientas que utilizo como Figma, LightHouse, FontsAwesome, Linux, GitHub, Git , Trello
   )
 }
 

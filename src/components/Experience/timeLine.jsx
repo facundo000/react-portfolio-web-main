@@ -5,6 +5,7 @@ import { ArrowRight } from "phosphor-react";
 
 import { useTranslation } from 'react-i18next';
 
+// MEJORARLO A ESTO: https://codesandbox.io/p/sandbox/react-vertical-timeline-goty8?file=%2Fsrc%2FApp.js%3A8%2C30
 
 const TimelineComponent = () => {
   const [t] = useTranslation("global");

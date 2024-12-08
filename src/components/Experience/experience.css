@@ -1,3 +1,13 @@
+.soft{
+    margin-top: 2rem;
+    display: block;
+    
+}
+
+.s_skills{
+    margin: 0;
+}
+
 .skill_icon{
     justify-content: center;
     flex-direction: column;
@@ -9,9 +19,10 @@
     width: 3rem;
     height: 3rem;
     margin-left: 26px;
+    color: var(--color-primary-variant)
 }
 .title_skill{
-    color: var(--color-white);
+    color: var(--color-primary-variant);
     padding: 10px;
 }
 .skills{
@@ -23,7 +34,8 @@
 }
 
 .experience__container > div{
-    background: var(--color-bg-variant);
+    /* background: var(--color-bg-variant); */
+    background: black;
     padding: 2.4rem 5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
@@ -44,6 +56,7 @@
 
 .rol {
     color: var(--color-white) !important;
+    padding-right: 1rem;
 }
 
 .experience__content{
