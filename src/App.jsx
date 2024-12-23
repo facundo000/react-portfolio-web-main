@@ -3,15 +3,16 @@ import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav'
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
-import Services from './components/Services/Services';
+// import Services from './components/Services/Services';
 import Portfolio from './components/Portfolio/Portfolio';
 //import Review from './components/Review/Review';//when have review
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import AOS from 'aos';
 import Loader from './components/Loader/Loader';
+import Particles from './components/Particles/Particlesbg';
 
-import	{ Helmet } from 'react-helmet';
+// import	{ Helmet } from 'react-helmet';
 
 const App = () => {  
 
@@ -69,8 +70,7 @@ const App = () => {
 
   return (
    isLoading ? <Loader/> : (
-    <>
-
+    <>            
       <Header/>
       {/* Nav section  */}
       <Nav activeNav={activeNav} setActiveNav={setActiveNav}/>
@@ -95,7 +95,8 @@ const App = () => {
 
       {/* Footer Section  */}
       <Footer/>
-
+      
+      <Particles/>
     </>
    )
   )

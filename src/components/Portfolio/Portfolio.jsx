@@ -4,6 +4,8 @@ import Modal from '../Modal/Modal'
 
 import { useTranslation } from 'react-i18next';
 
+import { CarouselComponent } from './CarouselComponent';
+
 const Portfolio = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -120,7 +122,11 @@ const Portfolio = () => {
            project={selectedProject}
          />)}
     </section>
-  )
+  
+)
 }
-
+/* From Uiverse.io by bhaveshxrawat */ 
+  {/* <div class="card">
+      <h2>CARD</h2>
+  </div> */}
 export default Portfolio

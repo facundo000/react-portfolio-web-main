@@ -18,7 +18,7 @@ i18next.init({
             global: global_es,
         }
     },
-    lng: "en",
+    lng: "es",
 });
 
 const root  = createRoot(document.getElementById('root') )
