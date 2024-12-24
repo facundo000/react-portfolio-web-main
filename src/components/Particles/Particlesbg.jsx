@@ -2,10 +2,11 @@ import { useEffect, useMemo, useState } from "react";
 import ParticlesComponent, {initParticlesEngine} from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; 
 
+
+
 const Particlesbg = () => {
   const [init, setInit] = useState(false);
 
-  // this should be run only once per application lifetime
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
@@ -18,6 +19,7 @@ const Particlesbg = () => {
   const particlesLoaded = (container) => {
     console.log(container);
   };
+
 
   const options = useMemo(
     () => ({

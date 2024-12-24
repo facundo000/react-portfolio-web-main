@@ -61,6 +61,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+    justify-content: center;
 }
 
 .portfolio__item{
@@ -69,10 +70,11 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: all .2s ease-in-out;
+    width: 26rem;
 }
 
 .portfolio__item:hover{
-    border-color: var(--color-primary-variant);
+    /* border-color: var(--color-primary-variant); */
     background: transparent;
     transform: scale(1.08);
 }

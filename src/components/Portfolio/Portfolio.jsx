@@ -4,7 +4,9 @@ import Modal from '../Modal/Modal'
 
 import { useTranslation } from 'react-i18next';
 
-import { CarouselComponent } from './CarouselComponent';
+import { CardDescription, Card } from 'keep-react'
+
+// import { CarouselComponent } from './Carousel'
 
 const Portfolio = () => {
 
@@ -70,7 +72,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id='portfolio'>
+    <section id='portfolio'> 
         <h5 data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration='700'>{t("portfolio-favorite-part")} </h5>
         <h2 data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration='900'>{t("portfolio-title")}</h2>
 
@@ -78,25 +80,20 @@ const Portfolio = () => {
 
          { 
           projects.map( ({name,image,deployedLink,description,toolsUsed, fadeDuration, GitName}) => (
-          <article className='portfolio__item' key={name} data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration={fadeDuration}
+          <article className='portfolio__item' key={name} data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration={fadeDuration}          
           >
               <div className="portfolio__item-image">
                   <img src={image} alt={`${name} app Screenshot`} loading="lazy" />
               </div>
-              {/* <h3
-              title={t("click-for-details")}
-              className='portfolio__item-name'
-               onClick={() => handleClick({name,image,deployedLink, GitName, toolsUsed, description})}
-              >
-                {name}
-              </h3> */}
-              <button 
-              title={t("click-for-details")}
-              className='portfolio__item-name'
-              onClick={() => handleClick({name,image,deployedLink, GitName, toolsUsed, description})}>
-                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                {name}
-              </button>
+
+              <CardDescription style={{color: 'white'}}>
+              {description}
+              <br />
+                  {toolsUsed.map((tool, index) => (
+                    <span key={index}>{tool}{index < toolsUsed.length - 1 ? ', ' : ''}</span>
+                  ))}
+              </CardDescription>
+
               <div className="portfolio__item-cta">
                 <a className='btn gh' 
                   href={`https://github.com/${GitName}`}
@@ -113,7 +110,7 @@ const Portfolio = () => {
               </div>
           </article>
            ))
-         }
+          }
 
         </div>
 
@@ -121,12 +118,10 @@ const Portfolio = () => {
            closeModal={handleClick}
            project={selectedProject}
          />)}
-    </section>
-  
-)
+    </section> 
+
+    
+  )
 }
-/* From Uiverse.io by bhaveshxrawat */ 
-  {/* <div class="card">
-      <h2>CARD</h2>
-  </div> */}
+
 export default Portfolio

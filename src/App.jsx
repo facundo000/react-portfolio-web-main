@@ -12,6 +12,8 @@ import AOS from 'aos';
 import Loader from './components/Loader/Loader';
 import Particles from './components/Particles/Particlesbg';
 
+import { CardComponent } from './components/Portfolio/CardComponent';
+
 // import	{ Helmet } from 'react-helmet';
 
 const App = () => {  
@@ -87,6 +89,9 @@ const App = () => {
       {/* Portfolio section  */}
       <Portfolio/>
 
+      {/*  */}
+      {/* <CardComponent />  */}
+      
       {/* References section  */}
       {/* <Review/> */}
 
@@ -96,7 +101,7 @@ const App = () => {
       {/* Footer Section  */}
       <Footer/>
       
-      <Particles/>
+      {/* <Particles/> */}
     </>
    )
   )
