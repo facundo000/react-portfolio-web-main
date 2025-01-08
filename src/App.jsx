@@ -10,9 +10,8 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import AOS from 'aos';
 import Loader from './components/Loader/Loader';
-import Particles from './components/Particles/Particlesbg';
 
-import { CardComponent } from './components/Portfolio/CardComponent';
+// import { CardComponent } from './components/Portfolio/CardComponent';
 
 // import	{ Helmet } from 'react-helmet';
 

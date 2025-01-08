@@ -3,9 +3,7 @@ import image1 from '../../assets/projectsImg/coffee-blog.webp'
 import image2 from '../../assets/projectsImg/nekode.webp'
 import {
   Carousel,
-  CarouselButtons,
   CarouselControl,
-  CarouselIndicators,
   CarouselItem,
   CarouselNextButton,
   CarouselPrevButton,

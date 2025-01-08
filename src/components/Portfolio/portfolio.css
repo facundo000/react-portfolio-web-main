@@ -1,3 +1,23 @@
+.tools-used {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; 
+  /* justify-content: flex-start; */
+  justify-content: center;
+}
+
+
+.tools-used span {
+  display: inline-block; /* Asegura que los íconos se comporten como elementos en línea */
+  margin: 0 8px; /* Espaciado horizontal entre los íconos */
+  text-align: center; /* Centrar contenido del ícono si es necesario */
+  vertical-align: middle; /* Alinear verticalmente con el texto o contenido cercano */
+  padding: 1ren;
+}
+
+
+
+
 /* The animation code */
 @keyframes colorChange {
     0% {
@@ -71,6 +91,9 @@
     border: 1px solid transparent;
     transition: all .2s ease-in-out;
     width: 26rem;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio__item:hover{
@@ -105,6 +128,7 @@
     margin-bottom: 1rem;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
 }
 
 button {
@@ -148,8 +172,8 @@ button {
  @media  screen and (max-width: 1024px) {
 
     .portfolio__container{
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.2rem;        
     }
 
 }
@@ -159,5 +183,6 @@ button {
     .portfolio__container{
         grid-template-columns: 1fr;
         gap: 1rem;
+        padding: 2rem;
     }
 }
