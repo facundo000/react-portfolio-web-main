@@ -66,6 +66,7 @@
    "portfolio-item-description3": "Blog created from a coffee shop where there is information about coffee, there is a 'courses' section and another to send a message through a form.",
    "portfolio-item-description4": "The platform is responsible for registering for courses. Where each teacher or administrator can register one or more courses.\n\nThe student for the first time will have to log in, to then view the available courses, where once they choose the corresponding course they will be registered once subscribed.",
    "portfolio-item-description5": "Nekode is an innovative platform in the edtech field that transforms JavaScript learning into a fun and immersive experience. With game features such as levels and lives, it allows you to test your knowledge interactively. \n\nIn addition, it has a ranking system that measures your progress and compares it with other players, assigning levels and medals to recognize your achievements. Nekode offers valuable personalized feedback, telling you the specific areas of JavaScript you need to strengthen, giving you a clear path to improve your programming skills.",
+   "portfolio-item-description6": "Project started as a result of a course, it was adapted and updated with the version of Angular with modules. \n\n In the backend I used NestJS with TypeOrm and the PostgreSQL database was included in a **docker container**",
    "click-for-details": "Click for the details",
    "portfolio-view-link-code": "View the",
    "portfolio-link-code": "source code",
