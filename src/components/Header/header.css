@@ -41,6 +41,25 @@ header {
     background: var(--color-primary);
 }
 
+/* ========================== DIRECT SOCIAL LINKS ========================== */
+.header__direct_socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.header__direct_socials a {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.header__direct_socials a:hover {
+    color: var(--color-white);
+    transform: translateY(-4px);
+}
+
 /* ========================== ME ========================== */
 .logo {
     width: 30rem;
@@ -82,6 +101,29 @@ header {
 
     header  {
         height: 115vh;
+    }
+    
+    /* Estilo de botones para enlaces sociales en pantallas pequeñas */
+    .header__direct_socials {
+        margin-top: 1.5rem;
+    }
+    
+    .header__direct_socials a {
+        background-color: var(--color-bg-variant);
+        color: var(--color-white);
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        border: 1px solid transparent;
+    }
+    
+    .header__direct_socials a:hover {
+        background-color: transparent;
+        border-color: var(--color-primary-variant);
+        color: var(--color-primary);
     }
 }
 

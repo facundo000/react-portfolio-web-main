@@ -4,6 +4,8 @@ import CTA from './CTA';
 import Avatar from '../../assets/avatar-logo.webp';
 import AvatarPng from '../../assets/avatar-logo.jpg';
 import HeaderSocial from './HeaderSocials';
+import {BsLinkedin} from 'react-icons/bs'
+import {FaGithub} from 'react-icons/fa'
 
 import UseI8next from '../Services/I8next.js';
 import { useTranslation } from 'react-i18next';
@@ -19,7 +21,14 @@ const Header = () => {
          <h1 data-aos="fade-up" data-aos-anchor=".header__container" data-aos-duration="1000" >Facundo Nicolás Guzmán Olariaga</h1>
          <h5 data-aos="fade-up" data-aos-anchor=".header__container" data-aos-duration="900" className="text-light">{t("header.title")}</h5>
          
-         
+         <div className="header__direct_socials">
+           <a data-aos="fade-down" data-aos-duration="1500" href="https://www.linkedin.com/in/facundo-nicolas-guzman-olariaga-b4516021a" target="_blank" rel="noreferrer">
+              <BsLinkedin/>
+            </a>
+            <a data-aos="fade-down" data-aos-duration="1200" href="https://github.com/facundo000" target="_blank" rel="noreferrer">
+              <FaGithub/>
+            </a>
+         </div>
           <CTA/>
           <div className="i8next">
             <UseI8next />
