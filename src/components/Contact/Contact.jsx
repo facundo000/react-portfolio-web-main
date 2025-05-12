@@ -39,10 +39,9 @@ const Contact = () => {
         <div className="contact__options">
           {/* Email  */}
           <article className="contact__option" data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='1600'>
-          <a href="mailto:facundo.guzman@mi.unc.edu.ar" target='_blank'  rel="noreferrer">
+            <a href="mailto:facundo.guzman@mi.unc.edu.ar" target='_blank'  rel="noreferrer">
             <MdOutlineEmail className='contact__option-icon'/></a>
             <h4>Email</h4>
-            <h5 style={{fontSize:'15px' }}>facundo.guzman@mi.unc.edu.ar</h5>
             <a href="mailto:facundo.guzman@mi.unc.edu.ar" target='_blank'  rel="noreferrer">{t("contact-email-button")}</a>
           </article>
 

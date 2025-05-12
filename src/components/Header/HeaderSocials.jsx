@@ -1,7 +1,6 @@
 import React from 'react'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
-import {SiWhatsapp} from 'react-icons/si'
 import {SiGmail} from 'react-icons/si'
 import { FaInstagram } from 'react-icons/fa'
 
@@ -15,10 +14,7 @@ const HeaderSocials = () => {
           </a>
           <a data-aos="fade-down" data-aos-duration="1200" href="https://github.com/facundo000" target="_blank" rel="noreferrer">
            <FaGithub className='size_icon'/>
-          </a>
-          <a data-aos-duration="900" data-aos="fade-down"  data-aos-anchor=".header__socials"  href="https://wa.link/46dn05" target="_blank" rel="noreferrer">
-            <SiWhatsapp className='size_icon'/>
-          </a>
+          </a>          
           <a data-aos-duration="900" data-aos="fade-down"  data-aos-anchor=".header__socials"  href="mailto:facundo.guzman@mi.unc.edu.ar" target="_blank" rel="noreferrer" title="Send me an email">
             <SiGmail className='size_icon'/>
           </a>

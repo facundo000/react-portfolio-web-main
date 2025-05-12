@@ -140,7 +140,7 @@ const Portfolio = () => {
     { 
       name : "Paint",
       GitName: "facundo000/paint-angular/tree/websocket",
-      deployedLink: "https://paint-websocket.netlify.app/",
+      deployedLink: "https://paint-angular.vercel.app/",
       image: require('../../assets/projectsImg/paint.webp'),
       fadeDuration:'1000',
       description: t("portfolio-item-description7"),
