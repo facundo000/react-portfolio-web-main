@@ -9,7 +9,7 @@ import ReactMarkdown from 'react-markdown';
 import primeNgIcon from '../../assets/projectsImg/icons8-primeng.svg';
 
 
-// import { CarouselComponent } from './Carousel'
+ import { CarouselComponent } from './Carousel'
 
 const Portfolio = () => {
 
@@ -299,6 +299,7 @@ const Portfolio = () => {
 
         <div className="container portfolio__container">
 
+        <CarouselComponent />
          { 
           projects.map( ({name,image,deployedLink,description,toolsUsed, fadeDuration, GitName}) => (
           <article className='portfolio__item' key={name} data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration={fadeDuration}          

@@ -15,9 +15,6 @@
   padding: 1ren;
 }
 
-
-
-
 /* The animation code */
 @keyframes colorChange {
     0% {
@@ -96,11 +93,6 @@
     flex-direction: column;
 }
 
-.portfolio__item:hover{
-    /* border-color: var(--color-primary-variant); */
-    background: transparent;
-    transform: scale(1.08);
-}
 
 .portfolio__item-image{
     border-radius: 1.5rem;
@@ -128,7 +120,7 @@
     margin-bottom: 1rem;
     justify-content: center;
     align-items: center;
-    margin-top: auto;
+    margin-top: 0.2rem;
 }
 
 button {
@@ -167,8 +159,8 @@ button {
    .gh {
     background-color: var(--color-primary-variant);
    }
- /* Media Queries (Tablets ) */
-
+ 
+   /* Media Queries (Tablets ) */
  @media  screen and (max-width: 1024px) {
 
     .portfolio__container{
@@ -185,4 +177,30 @@ button {
         gap: 1rem;
         padding: 2rem;
     }
+}
+
+.carousel-control-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.carousel-control-buttons button {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #b39ddb;
+  width: 40px;
+  height: 40px;
+  color: #6d5978;
+  font-size: 1.5rem;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.carousel-control-buttons button:hover {
+  background: #b39ddb;
+  color: #fff;
+  box-shadow: 0 0 20px #9575cd;
 }
